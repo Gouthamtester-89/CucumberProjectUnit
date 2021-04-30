@@ -2,7 +2,7 @@
 Feature: Scenario Outline
 
   Scenario Outline: Scenario Outline using Hooks
-    Given Users launches telecom applications
+  # Given Users launches telecom applications
     And Users clicks on to Add Traffic plans
     When Users fills the fieldss "<AA>", "<AB>","<AC>","<AD>","<AE>","<AF>","<AG>"
     And Users clicks the submit buttons

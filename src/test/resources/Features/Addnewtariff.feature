@@ -3,7 +3,7 @@
 Feature: Adding tariff plan
 
   Background: 
-  Given Users launches telecom application
+  #Given Users launches telecom application
   And Users clicks on to Add Traffic plan
 @goutham @run
   Scenario: validate the Add Traffic plan

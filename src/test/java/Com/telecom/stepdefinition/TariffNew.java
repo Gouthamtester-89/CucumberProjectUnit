@@ -8,28 +8,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import Com.telecom.resources.CommonAction;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class TariffNew {
-	public static WebDriver driver;
+public class TariffNew extends CommonAction{
 	
-	
-
-@Given("Users launches telecom application")
-public void users_launches_telecom_application() {
-	
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("http://demo.guru99.com/telecom/");
-		driver.manage().window().maximize();
-
-    
-}
-
 @Given("Users clicks on to Add Traffic plan")
 public void users_clicks_on_to_Add_Traffic_plan() {
     driver.findElement(By.xpath("(//h3)[3]")).click();
